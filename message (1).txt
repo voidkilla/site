@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blessed Bot</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #101010;
+        color: #f0f0f0;
+        margin: 0;
+      }
+
+      /* NAVBAR */
+      nav {
+        background-color: #121220;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        border-bottom: 1px solid #333;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+
+      nav .logo {
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: #4fc3f7;
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav ul li {
+        margin-left: 2rem;
+      }
+
+      nav ul li a {
+        color: #f0f0f0;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      nav ul li a:hover {
+        color: #4fc3f7;
+      }
+
+      /* MAIN CONTENT */
+      .container {
+        max-width: 900px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+      }
+
+      section {
+        margin-bottom: 2rem;
+        background-color: #2a2a3d;
+        padding: 1.5rem;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+
+      h1 {
+        font-size: 1.8rem;
+        color: #4fc3f7;
+        border-bottom: 2px solid #4fc3f7;
+        padding-bottom: 0.5rem;
+        margin-top: 1rem;
+      }
+      p {
+        margin: 1rem 0;
+      }
+
+      a {
+        color: #4fc3f7;
+        text-decoration: underline;
+      }
+
+      /* FOOTER */
+      footer {
+        background-color: #121220;
+        text-align: center;
+        padding: 1rem 0;
+        border-top: 1px solid #333;
+        font-size: 0.9rem;
+        color: #aaa;
+      }
+
+      @media (max-width: 768px) {
+        nav ul {
+          flex-direction: column;
+          align-items: flex-end;
+        }
+
+        nav ul li {
+          margin: 0.5rem 0 0;
+        }
+
+        h1 {
+          font-size: 1.4rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <nav>
+      <div class="logo">Blessed</div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#terms">Terms</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+      <section id="about">
+        <h1>About the Bot</h1>
+        <p>
+          Our bot is a powerful all-in-one Discord tool created to enhance
+          server management, automation, and community engagement. Designed with
+          both server owners and moderators in mind, it offers a wide range of
+          features including advanced moderation commands, automated role
+          systems and systems like ticket support, custom logging, anti-spam
+          filters, and much more are coming soon.
+        </p>
+        <p>
+          Whether you're running a gaming server, community hub, or support
+          server, our bot is tailored to help you stay organized, protected, and
+          active.
+        </p>
+        <p>
+          The bot is online 24/7 thanks to a reliable uptime system, and we are
+          constantly improving its functionality based on community feedback.
+          New features and improvements are rolled out regularly, making the bot
+          smarter, faster, and more useful with every update.
+        </p>
+        <p>
+          By using our bot, users agree to follow a set of guidelines designed
+          to protect the integrity of the service and the communities it
+          supports. Below are our <a href="#terms">Terms of Service</a>.
+        </p>
+      </section>
+
+      <section id="terms">
+        <h1 style="text-align: center; font-size: 3rem; border-bottom: none">
+          Terms of Service
+        </h1>
+
+        <h1>Usage Agreement</h1>
+        <p>
+          You may only use the bot in accordance with Discord’s Terms of Service
+          and Community Guidelines. Abusing the bot’s features, attempting to
+          exploit its commands, or using it for malicious purposes (e.g., raids,
+          spam, harassment) is strictly prohibited.
+        </p>
+
+        <h1>Data Collection</h1>
+        <p>
+          The bot may collect limited server data such as user IDs, message
+          content (for moderation/logging), and command usage for the purpose of
+          functionality and moderation. We do not sell or share this data, and
+          it is only used internally to improve performance and ensure smooth
+          operation.
+        </p>
+
+        <h1>Availability</h1>
+        <p>
+          While we strive for 99.9% uptime, we do not guarantee 24/7 access due
+          to maintenance, updates, or unforeseen outages. Users will be notified
+          in our support server in the case of extended downtime.
+        </p>
+
+        <h1>Support and Liability</h1>
+        <p>
+          We are not responsible for damages caused by misuse of the bot or
+          third-party abuse. We will do our best to patch vulnerabilities
+          quickly and provide active support, but the ultimate responsibility
+          lies with the server owner and moderators.
+        </p>
+
+        <h1>Termination of Access</h1>
+        <p>
+          We reserve the right to deny or remove access to the bot at any time,
+          for any reason, especially in cases of abuse, violation of terms, or
+          threats to the system.
+        </p>
+
+        <h1>Updates to Terms</h1>
+        <p>
+          We may update these Terms of Service at any time. Continued use of the
+          bot after updates means you agree to the new terms. Changes will
+          always be announced on our website or support server.
+        </p>
+      </section>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      &copy; 2025 Blessed Bot. All rights reserved. | <a href="#">Terms</a> |
+      <a href="#">Support</a>
+    </footer>
+  </body>
+</html>
